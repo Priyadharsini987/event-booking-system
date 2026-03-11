@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+:root {
+  --pookie-bg: #f7d9d9;      
+  --dark-ink: #1a1b1e;      
+  --pookie-card: #e070ca;
+  --eagle-gold: #db319a;
+  --soft-gold: #d926d0;
+  --soft-blush: #fad5b9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--pookie-bg);
+  color: var(--dark-ink);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Enhanced Hover for Buttons */
+.pookie-btn {
+  background: linear-gradient(45deg, var(--eagle-gold), var(--soft-gold));
+  color: #000;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+}
+
+.pookie-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(240, 193, 41, 0.4);
+}
+/* Responsive base font size */
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
